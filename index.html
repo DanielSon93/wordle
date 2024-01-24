@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/app.css" />
+  </head>
+  <body>
+    <div class="answer">&mdash; 정답입니다 &mdash;</div>
+    <header>Wordle</header>
+    <main>
+      <div id="time-check" class="time-check">00 : 00</div>
+      <div class="word">
+        <div class="word-row">
+          <div class="word-col" data-idx="00"></div>
+          <div class="word-col" data-idx="01"></div>
+          <div class="word-col" data-idx="02"></div>
+          <div class="word-col" data-idx="03"></div>
+          <div class="word-col" data-idx="04"></div>
+        </div>
+        <div class="word-row">
+          <div class="word-col" data-idx="10"></div>
+          <div class="word-col" data-idx="11"></div>
+          <div class="word-col" data-idx="12"></div>
+          <div class="word-col" data-idx="13"></div>
+          <div class="word-col" data-idx="14"></div>
+        </div>
+        <div class="word-row">
+          <div class="word-col" data-idx="20"></div>
+          <div class="word-col" data-idx="21"></div>
+          <div class="word-col" data-idx="22"></div>
+          <div class="word-col" data-idx="23"></div>
+          <div class="word-col" data-idx="24"></div>
+        </div>
+        <div class="word-row">
+          <div class="word-col" data-idx="30"></div>
+          <div class="word-col" data-idx="31"></div>
+          <div class="word-col" data-idx="32"></div>
+          <div class="word-col" data-idx="33"></div>
+          <div class="word-col" data-idx="34"></div>
+        </div>
+        <div class="word-row">
+          <div class="word-col" data-idx="40"></div>
+          <div class="word-col" data-idx="41"></div>
+          <div class="word-col" data-idx="42"></div>
+          <div class="word-col" data-idx="43"></div>
+          <div class="word-col" data-idx="44"></div>
+        </div>
+        <div class="word-row">
+          <div class="word-col" data-idx="50"></div>
+          <div class="word-col" data-idx="51"></div>
+          <div class="word-col" data-idx="52"></div>
+          <div class="word-col" data-idx="53"></div>
+          <div class="word-col" data-idx="54"></div>
+        </div>
+      </div>
+
+      <div class="keyboard">
+        <div class="keyboard-row">
+          <div class="keyboard-col" data-key="Q">Q</div>
+          <div class="keyboard-col" data-key="W">W</div>
+          <div class="keyboard-col" data-key="E">E</div>
+          <div class="keyboard-col" data-key="R">R</div>
+          <div class="keyboard-col" data-key="T">T</div>
+          <div class="keyboard-col" data-key="Y">Y</div>
+          <div class="keyboard-col" data-key="U">U</div>
+          <div class="keyboard-col" data-key="I">I</div>
+          <div class="keyboard-col" data-key="O">O</div>
+          <div class="keyboard-col" data-key="P">P</div>
+        </div>
+        <div class="keyboard-row">
+          <div class="keyboard-col" data-key="A">A</div>
+          <div class="keyboard-col" data-key="S">S</div>
+          <div class="keyboard-col" data-key="D">D</div>
+          <div class="keyboard-col" data-key="F">F</div>
+          <div class="keyboard-col" data-key="G">G</div>
+          <div class="keyboard-col" data-key="H">H</div>
+          <div class="keyboard-col" data-key="J">J</div>
+          <div class="keyboard-col" data-key="K">K</div>
+          <div class="keyboard-col" data-key="L">L</div>
+        </div>
+        <div class="keyboard-row">
+          <div class="keyboard-col etc" data-key="ENTER">ENTER</div>
+          <div class="keyboard-col" data-key="Z">Z</div>
+          <div class="keyboard-col" data-key="X">X</div>
+          <div class="keyboard-col" data-key="C">C</div>
+          <div class="keyboard-col" data-key="V">V</div>
+          <div class="keyboard-col" data-key="B">B</div>
+          <div class="keyboard-col" data-key="N">N</div>
+          <div class="keyboard-col" data-key="M">M</div>
+          <div class="keyboard-col etc" data-key="BACKSPACE">
+            <img src="./assets/delete.svg" alt="" data-key="BACKSPACE" />
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./js/app.js"></script>
+  </body>
+</html>

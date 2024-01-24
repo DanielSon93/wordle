@@ -1,0 +1,40 @@
+@import url("./header.css");
+@import url("./main.css");
+
+:root {
+  --color-green: rgba(83, 141, 78, 1);
+  --color-yellow: rgba(181, 159, 59, 1);
+  --color-darkgray: rgba(120, 124, 126, 1);
+  --color-lightgray: rgba(211, 214, 218, 1);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.answer {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 10vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-size: 2rem;
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+
+.success {
+  opacity: 1;
+  left: 50%;
+}

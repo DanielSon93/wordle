@@ -1,0 +1,71 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.word {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin: 20px 0;
+}
+
+.word-row {
+  display: flex;
+  gap: 5px;
+}
+
+.word-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: bold;
+  width: 60px;
+  height: 60px;
+  border: 2px solid var(--color-lightgray);
+}
+
+.keyboard {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.keyboard-row {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.keyboard-col {
+  width: 45px;
+  height: 60px;
+  background-color: var(--color-lightgray);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 19px;
+}
+
+.etc {
+  width: 70px !important;
+}
+
+.etc:first-child {
+  font-size: 13px;
+}
+
+.etc:last-child > img {
+  width: 25px;
+  height: 25px;
+}
+
+.time-check {
+  margin-top: 10px;
+  font-weight: bold;
+}
