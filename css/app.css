@@ -6,6 +6,7 @@
   --color-yellow: rgba(181, 159, 59, 1);
   --color-darkgray: rgba(120, 124, 126, 1);
   --color-lightgray: rgba(211, 214, 218, 1);
+  --color-red: rgba(201, 19, 13, 1);
 }
 
 body {
@@ -20,21 +21,57 @@ body {
 .answer {
   position: fixed;
   top: 50%;
-  left: 0;
+  left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 400px;
-  height: 10vh;
-  background-color: rgba(0, 0, 0, 0.6);
+  width: 100vw;
+  height: 100vh;
   color: #fff;
-  font-size: 2rem;
+  font-size: 3rem;
   opacity: 0;
-  transition: all 1s ease-in-out;
+  z-index: -10;
 }
 
 .success {
-  opacity: 1;
-  left: 50%;
+  z-index: 10;
+  background-color: var(--color-green);
+  animation: success 5s infinite;
+}
+
+.fail {
+  z-index: 10;
+  background-color: var(--color-red);
+  animation: fail 5s infinite;
+}
+
+@keyframes success {
+  0% {
+    background-color: var(--color-green);
+    opacity: 0.6;
+  }
+  50% {
+    background-color: var(--color-green);
+    opacity: 0.9;
+  }
+  100% {
+    background-color: var(--color-green);
+    opacity: 0.6;
+  }
+}
+
+@keyframes fail {
+  0% {
+    background-color: var(--color-red);
+    opacity: 0.6;
+  }
+  50% {
+    background-color: var(--color-red);
+    opacity: 0.9;
+  }
+  100% {
+    background-color: var(--color-red);
+    opacity: 0.6;
+  }
 }

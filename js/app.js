@@ -49,12 +49,17 @@ function appStart() {
         }
       }
 
+      const final = document.querySelector(".answer");
       if (cnt === 5) {
-        // 정답일 경우 더이상 키보드가 눌리지 않도록 이벤트 제거
-        window.removeEventListener("keydown", handleKeydown);
-        window.removeEventListener("click", handleUIKeydown);
-        endInterval();
-        document.querySelector(".answer").classList.toggle("success");
+        appEnd();
+        final.classList.remove("fail");
+        final.classList.add("success");
+        final.innerHTML = "정답입니다";
+      } else if (cnt < 5 && row === 5) {
+        appEnd();
+        final.classList.remove("success");
+        final.classList.add("fail");
+        final.innerHTML = "오답입니다";
       } else {
         row++;
         col = 0;
@@ -79,6 +84,12 @@ function appStart() {
         col++;
       }
     }
+  };
+
+  const appEnd = () => {
+    window.removeEventListener("keydown", handleKeydown);
+    window.removeEventListener("click", handleUIKeydown);
+    endInterval();
   };
 
   // UI 키보드 입력
